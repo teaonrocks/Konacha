@@ -6,7 +6,7 @@
 
 ## Before
 
-![Before processing](./images/27.jpeg "Before")
+![Before processing](./images/uncropped.jpg "Before")
 
 ## After
 
