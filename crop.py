@@ -29,7 +29,7 @@ for cnt in contours:
             x, y, w, h = cv2.boundingRect(cnt)
             ratio = float(w) / h
             if ratio >= 0.8 and ratio <= 1.2:
-                img = cv2.drawContours(img, [cnt], -1, (0, 255, 255), 3)
+                # img = cv2.drawContours(img, [cnt], -1, (0, 255, 255), 3)
                 allx.append(x)
                 ally.append(y)
                 widths.append(w)
@@ -46,7 +46,7 @@ bottomright = (
     max(allx) + int(averageWidth),
     max(ally) + int(averageHeight),
 )
-cv2.rectangle(img, topleft, bottomright, (0, 255, 0), 5)
+# cv2.rectangle(img, topleft, bottomright, (0, 255, 0), 5)
 
 crop_img = img[topleft[1] : bottomright[1], topleft[0] : bottomright[0]]
 
